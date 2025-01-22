@@ -21,7 +21,13 @@ Author: Kaixin Yang (yang_kaixin@gzlab.ac.cn), GCBI
 2. Run the pipeline with:
 
     ```bash
-    nextflow run af3_parallel_abag.nf -with-singularity /home/apps/alphafold3/alphafold3_parallel.sif --model /home/apps/alphafold3/af3.bin.zst --af3db /home/apps/alphafold3/af3db --antibody <abs_path_of_antibody.fasta> --antigen <abs_path_of_antigen.fasta> -bg #-bg to running background
+    nextflow run af3_parallel_abag.nf \
+      -with-singularity /home/apps/alphafold3/alphafold3_parallel.sif \
+      --model /home/apps/alphafold3/af3.bin.zst \
+      --af3db /home/apps/alphafold3/af3db \
+      --antibody <abs_path_of_antibody.fasta> \
+      --antigen <abs_path_of_antigen.fasta> \
+      -bg #-bg to running background
     ```
 
 > Note: more details about `nextflow` can be found [here](https://www.nextflow.io/docs/latest/index.html).
