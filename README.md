@@ -1,4 +1,6 @@
-This Nextflow pipeline is designed to run AlphaFold3 for antigen-antibody prediction. The pipeline consists of two main processes: `generateInputJson` and `runAlphaFold3`.
+This Nextflow pipeline is designed to run AlphaFold3 for antigen-antibody prediction.
+
+Author: Kaixin Yang (yang_kaixin@gzlab.ac.cn), GCBI
 
 1. `generateInputJson`: This process generates JSON input files required by AlphaFold3. It reads antibody and antigen sequences from FASTA files, combines them, and writes the combinations to JSON files.
 
@@ -41,9 +43,12 @@ Sequence id must be uppercase alpha string, and the end of each id must be set t
   ```
 
 !!!ID NOT supported!!!:
+
+```{text}
 >onel / >oneh / >twol / >twoh
 >l1 / >h1 / >l2 / >h2
 >1 / >2
+```
 
 ### Output
 AlphaFold3 results in the `work` directory.
