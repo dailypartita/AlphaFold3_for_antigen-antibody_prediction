@@ -105,7 +105,7 @@ process generateInputJson {
             continue
         input_json = {
             "name": f"combo_{abid[i][:-1]}_{agid[0]}",
-            "modelSeeds": [1],
+            "modelSeeds": [1, 2, 3, 4, 5],
             "sequences": [],
             "dialect": "alphafold3",
             "version": 1
